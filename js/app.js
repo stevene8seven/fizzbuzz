@@ -29,7 +29,12 @@ $('#begin').click(function(event){
 
 	while(count < 100)
 	{
-		if (count%3 === 0){
+		if(count%5 === 0 && count%3 === 0){
+			document.write("FizzBuzz");
+			document.write("<br>");
+		}
+
+		else if(count%3 === 0){
 			document.write("Fizz");
 			document.write("<br>");
 
@@ -37,11 +42,6 @@ $('#begin').click(function(event){
 
 		else if (count%5 === 0){
 			document.write("Buzz");
-			document.write("<br>");
-		}
-
-		else if (count%5 === 0 && count%3 === 0){
-			document.write("FizzBuzz");
 			document.write("<br>");
 		}
 
